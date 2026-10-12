@@ -39,10 +39,11 @@ class Videre < Formula
   def caveats
     <<~EOS
       Model weights are downloaded on first use, not at install:
-        videre embed  ~780 MB (semantic search)
+        videre embed  ~1.5 GB (semantic search, also used by search and classify)
         videre faces  ~180 MB (face detection)
 
-      scan, dedupe, fix-dates, prune, stats and locations need no model at all.
+      scan, dedupe, fix-dates, prune, stats, status, locations, import,
+      export, mark and tag need no model at all.
     EOS
   end
 
