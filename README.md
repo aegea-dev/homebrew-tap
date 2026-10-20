@@ -1,10 +1,18 @@
 # homebrew-tap
 
-Homebrew formulae for [videre](https://github.com/erhangundogan/videre), a
+Homebrew formulae for [videre](https://github.com/aegea-dev/videre), a
 local-first CLI for photo and video libraries.
 
 ```bash
-brew install erhangundogan/tap/videre
+brew install aegea-dev/tap/videre
+```
+
+Installed from the old `erhangundogan/tap`? Move to this one:
+
+```bash
+brew uninstall videre
+brew untap erhangundogan/tap
+brew install aegea-dev/tap/videre
 ```
 
 ## Why a tap rather than homebrew-core
