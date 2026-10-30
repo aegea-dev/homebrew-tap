@@ -5,28 +5,28 @@
 class Itero < Formula
   desc "Runs workflows again and again: schedules, events, steps, workers"
   homepage "https://github.com/aegea-dev/itero"
-  version "0.20.0"
+  version "0.21.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "4d8bc98911e8d3eb54e37e7ea953b4c0af91a13f31eb57972892f18b85176c40"
+      sha256 "22cddfe87895338181a284968c830577af0f8b75072d821d307ba5bdabc122f7"
     end
     on_intel do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "ebcea8dd2f6c7175a824550e964093ad264c5b3fa71dd689a118c0d66b5a3547"
+      sha256 "85eaec7ccfe5e3ff71b55f4f41269ca02ff6f326b5cec3b93c6ac1809cc668eb"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "409154e79bd0098c957cc7982afc7d507ab955cd88cd6c9fc64ea5691ac78f5a"
+      sha256 "5921e21fe95824db654cc02447132f368ae93b50b0324e229822ebdd8538032c"
     end
     on_arm do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6d0417812025417954d6c1026194c19b7d027a065e49ad2e6e30a476d387cee7"
+      sha256 "2c8f4b7872b6b5df9a8a69f6d0822031a5aa60dd5d5037d18860a5421347706d"
     end
   end
 
@@ -38,8 +38,12 @@ class Itero < Formula
 
   def caveats
     <<~EOS
-      Start a workspace's daemon at login, in that workspace:
+      Start the machine's daemon at login, for the workspaces on its list:
+        itero workspace add      (in each workspace)
         itero service install
+
+      After an upgrade, run the new itero:
+        itero service restart
 
       On macOS, notifications come from itero (Itero.app, in this formula's
       libexec); macOS asks once to allow them.
