@@ -7,28 +7,28 @@
 class IteroAi < Formula
   desc "Runs a local model for itero, behind the OpenAI API on a Unix socket"
   homepage "https://github.com/aegea-dev/itero"
-  version "0.22.0"
+  version "0.23.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-ai-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "efadf8d238bc445166d65bd35bf562095c4bea4065b97807f0e4eba1db82bf95"
+      sha256 "1703d79ee6878fcb2b6496bc9f19e9df553fa3bef23c6b68e4c087a3c57a11d2"
     end
     on_intel do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-ai-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "a9de4db992a76cb1e82ba9a3407a538ed1f2747224b7b5ffa8cd8bb18f1ca152"
+      sha256 "2321014525b4bdda91ed81794bcf3e376ff19727b514ae5702c493298b01f11a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-ai-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "beb57e685019388c9c547a045bf5259c88fdd0909eff4ea92b49f64b01627944"
+      sha256 "425bc24cc9756bdb1d67e5965d617b5289a999b489efa1e95f43835a14363ae0"
     end
     on_arm do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-ai-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "60bdf306e0ab006abd8b34b26fab140c86bad40c625be56a1ffd0c19ab81f8cb"
+      sha256 "2ad1c0dcd9a79d9379eb8ff47b729b050bdb69cd58a694e5fe7862ca69d8288b"
     end
   end
 
