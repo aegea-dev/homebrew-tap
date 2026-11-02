@@ -5,28 +5,28 @@
 class Primum < Formula
   desc "Prioritized work items as plain markdown files, with a CLI and a local web board"
   homepage "https://github.com/aegea-dev/primum"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/aegea-dev/primum/releases/download/v#{version}/primum-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "13075ee2dae2c09908d0af467bd75b5915acacaa826d8f7e6a14189518ab1abf"
+      sha256 "5cb69bf5f4a261b7de82b124905453918defcc72ae19c7b9ffa8d4160777ad1c"
     end
     on_intel do
       url "https://github.com/aegea-dev/primum/releases/download/v#{version}/primum-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "d016e9f0e935fb668420a67a26a4f5e1622b1d0f095121fa4778a30c812f08bd"
+      sha256 "df06f9627c594d19a3821b19d5da8efad4cac9222d7987ecdcce87dd66ff2460"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/aegea-dev/primum/releases/download/v#{version}/primum-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e94e3bd78d4ffb7fcd4512af037fcb33f0c7e5364759bb0c653315643b212e30"
+      sha256 "b80860b82671e5b81cc3bb4484cb471cab52ac39ca4b87800eda132379125e2d"
     end
     on_arm do
       url "https://github.com/aegea-dev/primum/releases/download/v#{version}/primum-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "df8fe6ff44ce65ed77017e7332d338ec501a638f7a2a5a96d0f60a1d180ccbae"
+      sha256 "92d94690d584b853ddaa8e42795c641d4e1172e324305a8e4ca3a98ff9c4ba56"
     end
   end
 
