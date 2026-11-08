@@ -5,28 +5,28 @@
 class Itero < Formula
   desc "Runs workflows again and again: schedules, events, steps, workers"
   homepage "https://github.com/aegea-dev/itero"
-  version "0.35.0"
+  version "0.36.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "3c83740d745519b289b5447dfaae701a20ab668617f5728ed2e2881d4c389df5"
+      sha256 "70687faff78f8c942625412c172c04d0dfc395e555e9c4cda45ba8fa411baaf2"
     end
     on_intel do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "e1d83956a21ae92973217c0d520256ef5079be6f1e0b90ec0d542f5f994fa799"
+      sha256 "8f35164ac300d0cc9fb29e4c87125d43516d534f054e9c116db1818a42f466f8"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "baadbef5d3a268672bf0cdcbf6f95c196c85b04a4527ddda27c5d9c7de72eca0"
+      sha256 "e48cac93dc65ef4ea36e36e0eea0c1aca6689296403aacad64d1cb64e6c3cc26"
     end
     on_arm do
       url "https://github.com/aegea-dev/itero/releases/download/v#{version}/itero-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "94002e4c8a4e6f9a379fbb068f0db90c9bddeb348d5cab0a61b1fec17d34c1cf"
+      sha256 "ccdec7431589f2e2fef891a84d0b9b95f50732c44d0ecfed47a52015a6c33104"
     end
   end
 
